@@ -1,0 +1,8 @@
+{
+	"name": "qjdwechat",
+	"dependencies":{
+		"express": "*",
+		"ejs": "*"
+	}
+}
+
