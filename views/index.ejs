@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>微信</title>
+</head>
+<body>
+<form>
+	<textarea id="menu"></textarea>
+	<button type="submit">提交</button>
+</form>
+<script src="/core/js/jquery.min.js"></script>
+<script>
+
+$( 'form' ).on( 'submit', function(){
+	$.ajax({
+		url: '/createMenu',
+		type: 'POST',
+		data: {
+			'button': $( '#menu' ).val()
+		},
+		success: function( ret ){
+			console.log( ret );
+		}
+	});
+	return false;
+})
+
+</script>
+</body>
+</html>
