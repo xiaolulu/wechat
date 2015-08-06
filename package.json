@@ -2,7 +2,9 @@
 	"name": "qjdwechat",
 	"dependencies":{
 		"express": "*",
-		"ejs": "*"
+		"ejs": "*",
+		"wechat": "*",
+		"wechat-enterprise": "*"
 	}
 }
 
